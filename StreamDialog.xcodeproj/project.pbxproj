@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2738846B15BEB3B8006F1249 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2738846A15BEB3B8006F1249 /* UIKit.framework */; };
+		2738846D15BEB3B8006F1249 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2738846C15BEB3B8006F1249 /* Foundation.framework */; };
+		2738846F15BEB3B8006F1249 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2738846E15BEB3B8006F1249 /* CoreGraphics.framework */; };
+		2738847515BEB3B8006F1249 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2738847315BEB3B8006F1249 /* InfoPlist.strings */; };
+		2738847715BEB3B8006F1249 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738847615BEB3B8006F1249 /* main.m */; };
+		2738847B15BEB3B8006F1249 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738847A15BEB3B8006F1249 /* AppDelegate.m */; };
+		2738847E15BEB3B8006F1249 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2738847C15BEB3B8006F1249 /* MainStoryboard.storyboard */; };
+		2738848115BEB3B8006F1249 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738848015BEB3B8006F1249 /* MasterViewController.m */; };
+		2738848415BEB3B8006F1249 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738848315BEB3B8006F1249 /* DetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2738846615BEB3B8006F1249 /* StreamDialog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamDialog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2738846A15BEB3B8006F1249 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2738846C15BEB3B8006F1249 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2738846E15BEB3B8006F1249 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2738847215BEB3B8006F1249 /* StreamDialog-Info.plist */ = {isa = PBXFileReference; path = "StreamDialog-Info.plist"; sourceTree = "<group>"; };
+		2738847415BEB3B8006F1249 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2738847615BEB3B8006F1249 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2738847815BEB3B8006F1249 /* StreamDialog-Prefix.pch */ = {isa = PBXFileReference; path = "StreamDialog-Prefix.pch"; sourceTree = "<group>"; };
+		2738847915BEB3B8006F1249 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		2738847A15BEB3B8006F1249 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2738847D15BEB3B8006F1249 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2738847F15BEB3B8006F1249 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		2738848015BEB3B8006F1249 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		2738848215BEB3B8006F1249 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		2738848315BEB3B8006F1249 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2738846315BEB3B8006F1249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2738846B15BEB3B8006F1249 /* UIKit.framework in Frameworks */,
+				2738846D15BEB3B8006F1249 /* Foundation.framework in Frameworks */,
+				2738846F15BEB3B8006F1249 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2738845B15BEB3B8006F1249 = {
+			isa = PBXGroup;
+			children = (
+				2738847015BEB3B8006F1249 /* StreamDialog */,
+				2738846915BEB3B8006F1249 /* Frameworks */,
+				2738846715BEB3B8006F1249 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2738846715BEB3B8006F1249 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2738846615BEB3B8006F1249 /* StreamDialog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2738846915BEB3B8006F1249 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2738846A15BEB3B8006F1249 /* UIKit.framework */,
+				2738846C15BEB3B8006F1249 /* Foundation.framework */,
+				2738846E15BEB3B8006F1249 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2738847015BEB3B8006F1249 /* StreamDialog */ = {
+			isa = PBXGroup;
+			children = (
+				2738847915BEB3B8006F1249 /* AppDelegate.h */,
+				2738847A15BEB3B8006F1249 /* AppDelegate.m */,
+				2738847C15BEB3B8006F1249 /* MainStoryboard.storyboard */,
+				2738847F15BEB3B8006F1249 /* MasterViewController.h */,
+				2738848015BEB3B8006F1249 /* MasterViewController.m */,
+				2738848215BEB3B8006F1249 /* DetailViewController.h */,
+				2738848315BEB3B8006F1249 /* DetailViewController.m */,
+				2738847115BEB3B8006F1249 /* Supporting Files */,
+			);
+			path = StreamDialog;
+			sourceTree = "<group>";
+		};
+		2738847115BEB3B8006F1249 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2738847215BEB3B8006F1249 /* StreamDialog-Info.plist */,
+				2738847315BEB3B8006F1249 /* InfoPlist.strings */,
+				2738847615BEB3B8006F1249 /* main.m */,
+				2738847815BEB3B8006F1249 /* StreamDialog-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2738846515BEB3B8006F1249 /* StreamDialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2738848715BEB3B8006F1249 /* Build configuration list for PBXNativeTarget "StreamDialog" */;
+			buildPhases = (
+				2738846215BEB3B8006F1249 /* Sources */,
+				2738846315BEB3B8006F1249 /* Frameworks */,
+				2738846415BEB3B8006F1249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StreamDialog;
+			productName = StreamDialog;
+			productReference = 2738846615BEB3B8006F1249 /* StreamDialog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2738845D15BEB3B8006F1249 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2738846015BEB3B8006F1249 /* Build configuration list for PBXProject "StreamDialog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2738845B15BEB3B8006F1249;
+			productRefGroup = 2738846715BEB3B8006F1249 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2738846515BEB3B8006F1249 /* StreamDialog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2738846415BEB3B8006F1249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2738847515BEB3B8006F1249 /* InfoPlist.strings in Resources */,
+				2738847E15BEB3B8006F1249 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2738846215BEB3B8006F1249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2738847715BEB3B8006F1249 /* main.m in Sources */,
+				2738847B15BEB3B8006F1249 /* AppDelegate.m in Sources */,
+				2738848115BEB3B8006F1249 /* MasterViewController.m in Sources */,
+				2738848415BEB3B8006F1249 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2738847315BEB3B8006F1249 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2738847415BEB3B8006F1249 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2738847C15BEB3B8006F1249 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2738847D15BEB3B8006F1249 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2738848515BEB3B8006F1249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2738848615BEB3B8006F1249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2738848815BEB3B8006F1249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StreamDialog/StreamDialog-Prefix.pch";
+				INFOPLIST_FILE = "StreamDialog/StreamDialog-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2738848915BEB3B8006F1249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StreamDialog/StreamDialog-Prefix.pch";
+				INFOPLIST_FILE = "StreamDialog/StreamDialog-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2738846015BEB3B8006F1249 /* Build configuration list for PBXProject "StreamDialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2738848515BEB3B8006F1249 /* Debug */,
+				2738848615BEB3B8006F1249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2738848715BEB3B8006F1249 /* Build configuration list for PBXNativeTarget "StreamDialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2738848815BEB3B8006F1249 /* Debug */,
+				2738848915BEB3B8006F1249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2738845D15BEB3B8006F1249 /* Project object */;
+}
