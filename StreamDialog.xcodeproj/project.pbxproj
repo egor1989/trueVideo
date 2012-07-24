@@ -17,8 +17,13 @@
 		2738849015BEB4B3006F1249 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738848C15BEB4B3006F1249 /* MasterViewController.m */; };
 		2738849115BEB4B3006F1249 /* ThumbnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738848E15BEB4B3006F1249 /* ThumbnailCell.m */; };
 		2738849215BEB4B3006F1249 /* ThumbnailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2738848F15BEB4B3006F1249 /* ThumbnailCell.xib */; };
-		2738849515BEB7EE006F1249 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2738849415BEB7EE006F1249 /* Icon.png */; };
 		273884C815BEBC71006F1249 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 273884C715BEBC71006F1249 /* DetailViewController.m */; };
+		273884D015BEC57B006F1249 /* big-buck-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 273884CD15BEC57B006F1249 /* big-buck-pressed.png */; };
+		273884D115BEC57B006F1249 /* big-buck-unpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 273884CE15BEC57B006F1249 /* big-buck-unpressed.png */; };
+		273884D215BEC57B006F1249 /* Thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 273884CF15BEC57B006F1249 /* Thumb.png */; };
+		273884D415BEC7C7006F1249 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273884D315BEC7C7006F1249 /* MediaPlayer.framework */; };
+		273884E115BECA38006F1249 /* big-buck-bunny-clip.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 273884E015BECA38006F1249 /* big-buck-bunny-clip.m4v */; };
+		273884E415BECBE7006F1249 /* Car2Garage2IsOpen1.png in Resources */ = {isa = PBXBuildFile; fileRef = 273884E315BECBE7006F1249 /* Car2Garage2IsOpen1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,9 +43,14 @@
 		2738848D15BEB4B3006F1249 /* ThumbnailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbnailCell.h; sourceTree = "<group>"; };
 		2738848E15BEB4B3006F1249 /* ThumbnailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailCell.m; sourceTree = "<group>"; };
 		2738848F15BEB4B3006F1249 /* ThumbnailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThumbnailCell.xib; sourceTree = "<group>"; };
-		2738849415BEB7EE006F1249 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		273884C615BEBC71006F1249 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		273884C715BEBC71006F1249 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		273884CD15BEC57B006F1249 /* big-buck-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big-buck-pressed.png"; sourceTree = "<group>"; };
+		273884CE15BEC57B006F1249 /* big-buck-unpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big-buck-unpressed.png"; sourceTree = "<group>"; };
+		273884CF15BEC57B006F1249 /* Thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Thumb.png; sourceTree = "<group>"; };
+		273884D315BEC7C7006F1249 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		273884E015BECA38006F1249 /* big-buck-bunny-clip.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "big-buck-bunny-clip.m4v"; sourceTree = "<group>"; };
+		273884E315BECBE7006F1249 /* Car2Garage2IsOpen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Car2Garage2IsOpen1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273884D415BEC7C7006F1249 /* MediaPlayer.framework in Frameworks */,
 				2738846B15BEB3B8006F1249 /* UIKit.framework in Frameworks */,
 				2738846D15BEB3B8006F1249 /* Foundation.framework in Frameworks */,
 				2738846F15BEB3B8006F1249 /* CoreGraphics.framework in Frameworks */,
@@ -60,6 +71,7 @@
 		2738845B15BEB3B8006F1249 = {
 			isa = PBXGroup;
 			children = (
+				273884D315BEC7C7006F1249 /* MediaPlayer.framework */,
 				2738847015BEB3B8006F1249 /* StreamDialog */,
 				2738846915BEB3B8006F1249 /* Frameworks */,
 				2738846715BEB3B8006F1249 /* Products */,
@@ -93,6 +105,7 @@
 				273884C515BEBC71006F1249 /* VideoPlayer */,
 				2738848A15BEB4B3006F1249 /* TableList */,
 				2738847115BEB3B8006F1249 /* Supporting Files */,
+				273884DF15BECA38006F1249 /* Video */,
 				2738849315BEB7EE006F1249 /* Images */,
 			);
 			path = StreamDialog;
@@ -124,7 +137,10 @@
 		2738849315BEB7EE006F1249 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				2738849415BEB7EE006F1249 /* Icon.png */,
+				273884E315BECBE7006F1249 /* Car2Garage2IsOpen1.png */,
+				273884CD15BEC57B006F1249 /* big-buck-pressed.png */,
+				273884CE15BEC57B006F1249 /* big-buck-unpressed.png */,
+				273884CF15BEC57B006F1249 /* Thumb.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -136,6 +152,14 @@
 				273884C715BEBC71006F1249 /* DetailViewController.m */,
 			);
 			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		273884DF15BECA38006F1249 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				273884E015BECA38006F1249 /* big-buck-bunny-clip.m4v */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +215,11 @@
 				2738847515BEB3B8006F1249 /* InfoPlist.strings in Resources */,
 				2738847E15BEB3B8006F1249 /* MainStoryboard.storyboard in Resources */,
 				2738849215BEB4B3006F1249 /* ThumbnailCell.xib in Resources */,
-				2738849515BEB7EE006F1249 /* Icon.png in Resources */,
+				273884D015BEC57B006F1249 /* big-buck-pressed.png in Resources */,
+				273884D115BEC57B006F1249 /* big-buck-unpressed.png in Resources */,
+				273884D215BEC57B006F1249 /* Thumb.png in Resources */,
+				273884E115BECA38006F1249 /* big-buck-bunny-clip.m4v in Resources */,
+				273884E415BECBE7006F1249 /* Car2Garage2IsOpen1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +346,7 @@
 				2738848915BEB3B8006F1249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

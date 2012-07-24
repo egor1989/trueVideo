@@ -8,49 +8,82 @@
 
 #import "DetailViewController.h"
 
-@interface DetailViewController ()
-- (void)configureView;
-@end
-
 @implementation DetailViewController
 
-@synthesize detailItem = _detailItem;
-@synthesize detailDescriptionLabel = _detailDescriptionLabel;
+-(IBAction)playMovie:(id)sender  
+{  
+    UIButton *playButton = (UIButton *) sender;   
+    
+    NSString *filepath   =   [[NSBundle mainBundle] pathForResource:@"big-buck-bunny-clip" ofType:@"m4v"];  
+    NSURL    *fileURL    =   [NSURL fileURLWithPath:filepath];  
+    moviePlayerController = [[MPMoviePlayerViewController alloc] initWithContentURL:fileURL];  
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self  
+                                             selector:@selector(moviePlaybackComplete:)  
+                                                 name:MPMoviePlayerPlaybackDidFinishNotification  
+                                               object:moviePlayerController];  
+    
+    [moviePlayerController.view setFrame:CGRectMake(playButton.frame.origin.x,   
+                                                    playButton.frame.origin.y,   
+                                                    playButton.frame.size.width,   
+                                                    playButton.frame.size.height)];  
+    
+    [self.view addSubview:moviePlayerController.view];  
+    //moviePlayerController.fullscreen = YES;  
+    
+    //    UIImageView *image = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Icon.png"]];
+    //    image.frame = CGRectMake(0, 0, 30, 30);
+    //    [moviePlayerController.view addSubview:image];
+    UILabel *label = [[UILabel alloc] init];
+    label.text = @"text";
+    label.frame = CGRectMake(10, 150, 40, 150);
+    label.backgroundColor = [UIColor clearColor];
+    label.textColor = [UIColor whiteColor];
+    [moviePlayerController.view addSubview:label];
+    
+//    NSTimer * hTimer=[NSTimer scheduledTimerWithTimeInterval:6.0
+//                                                      target:self
+//                                                    selector:@selector(moveImage)
+//                                                    userInfo:nil
+//                                                     repeats:YES];
+    
+    NSTimer *videoTime=[NSTimer scheduledTimerWithTimeInterval:1.0
+                                                      target:self
+                                                    selector:@selector(videoTimeController)
+                                                    userInfo:nil
+                                                     repeats:YES];
+    [[self navigationController] setNavigationBarHidden:YES animated:YES];
+    
+    image = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Car2Garage2IsOpen1.png"]];
+    
+    [moviePlayerController.moviePlayer play]; 
+}  
 
-#pragma mark - Managing the detail item
-
-- (void)setDetailItem:(id)newDetailItem
-{
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-        
-        // Update the view.
-        [self configureView];
-    }
+- (void) videoTimeController{
+//    switch ((int)moviePlayerController.moviePlayer.currentPlaybackTime) {
+//        case 2:
+//            
+//        default:
+//            break;
+//    }  ;   
+    image.frame = CGRectMake(moviePlayerController.moviePlayer.currentPlaybackTime*10, 200, 150, 70);
+    [moviePlayerController.view addSubview:image];
 }
 
-- (void)configureView
-{
-    // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
-    }
+- (void) moveImage{
+    image.frame = CGRectMake(100, 200, 90, 150);
+    [moviePlayerController.view addSubview:image];
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    [self configureView];
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    self.detailDescriptionLabel = nil;
-}
+- (void)moviePlaybackComplete:(NSNotification *)notification  
+{  
+    moviePlayerController = [notification object];  
+    [[NSNotificationCenter defaultCenter] removeObserver:self   
+                                                    name:MPMoviePlayerPlaybackDidFinishNotification   
+                                                  object:moviePlayerController];  
+    
+    [moviePlayerController.view removeFromSuperview];     
+} 
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

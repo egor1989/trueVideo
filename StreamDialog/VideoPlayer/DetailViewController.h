@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h> 
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController{
+    MPMoviePlayerViewController *moviePlayerController;
+    UIImageView *image;
+}
 
-@property (strong, nonatomic) id detailItem;
-
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+-(IBAction)playMovie:(id)sender;  
 
 @end
